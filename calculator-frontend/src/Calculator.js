@@ -7,6 +7,7 @@ const Calculator = () => {
 
   const handleButtonClick = (value) => {
     if (value === "=") {
+      console.log(expression);
       setExpression("");
       axios
         .post("http://localhost:5001/calculate", { expression })
